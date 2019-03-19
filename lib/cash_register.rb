@@ -31,7 +31,7 @@ end
 
 def apply_discount
   @total = (100 - @discount) * @total / 100
-  if @discount = 0
+  if @discount == 0
     "There is no discount to apply."
     else "After the discount, the total comes to $#{@total}."
 end
