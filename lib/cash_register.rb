@@ -24,7 +24,7 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
-
+  @discount * total
 end
 
 def items
