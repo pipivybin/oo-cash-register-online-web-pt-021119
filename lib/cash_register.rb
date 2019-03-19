@@ -2,7 +2,7 @@
 
 class CashRegister
 
-attr_accessor :discount :items
+attr_accessor :discount
 
 @items = []
 
@@ -24,6 +24,10 @@ def add_item(title, price, quantity = 1)
   @items << self
 end
 
+def items
+  @items
+end
+
 def apply_discount
   if @discount
   @total = @discount * @total
@@ -33,7 +37,7 @@ end
 end
 
 def void_last_transaction
-  
+
 end
 
 
