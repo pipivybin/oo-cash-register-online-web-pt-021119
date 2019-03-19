@@ -21,7 +21,7 @@ end
 def add_item(title, price, quantity = 1)
   @items = []
   @total += price * quantity
-  @items << self.title
+  @items << title
 end
 
 def items
