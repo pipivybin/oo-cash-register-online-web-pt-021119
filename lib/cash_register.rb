@@ -16,10 +16,6 @@ def add_item(title, price, quantity = 1)
   quantity.times { @items << title }
 end
 
-def items
-  @items
-end
-
 def apply_discount
   @total = (100 - @discount) * @total / 100
   if @discount == 0
