@@ -2,7 +2,7 @@
 
 class CashRegister
 
-attr_accessor :discount
+attr_accessor :discount :item
 
 @@all_items = []
 
@@ -28,6 +28,7 @@ def apply_discount
   @total = @discount * @total
   "After the discount, the total comes to #{@total}."
 else "There is no discount to apply."
+end
 end
 
 def items
