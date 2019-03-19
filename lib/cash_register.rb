@@ -30,7 +30,7 @@ end
 
 def apply_discount
   if @discount
-  @total = (1-@discount* 0.01) * @total
+  @total = (100 - @discount) * @total / 100
   "After the discount, the total comes to #{@total}."
 else "There is no discount to apply."
 end
