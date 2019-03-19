@@ -13,7 +13,7 @@ def initialize(discount = 0)
 end
 
 def total
-  @@total
+  @total
 end
 
 def add_item(title, price, quantity = 1)
