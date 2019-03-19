@@ -21,7 +21,7 @@ end
 
 def add_item(title, price, quantity = 1)
   @total += price * quantity
-  @item << self
+  @items << self
 end
 
 def apply_discount
@@ -32,8 +32,6 @@ else "There is no discount to apply."
 end
 end
 
-def items
 
-end
 
 end
