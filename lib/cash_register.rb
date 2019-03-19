@@ -11,6 +11,7 @@ def initialize(discount = 0)
 end
 
 def add_item(title, price, quantity = 1)
+  @last_transaction = price * quantity
   @total += price * quantity
   quantity.times { @items << title }
 end
