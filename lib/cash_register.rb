@@ -13,7 +13,7 @@ end
 def add_item(title, price, quantity = 1)
   @last_transaction = price * quantity
   self.total += self.last_transaction
-  quantity.times { @items << title }
+  quantity.times { self.items << title }
 end
 
 def apply_discount
