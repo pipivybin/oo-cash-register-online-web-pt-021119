@@ -24,7 +24,7 @@ def apply_discount
 end
 
 def items
-  @@all_items
+  
 end
 
 end
