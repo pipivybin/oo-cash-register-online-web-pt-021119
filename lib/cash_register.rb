@@ -12,7 +12,7 @@ end
 
 def add_item(title, price, quantity = 1)
   @last_transaction = price * quantity
-  @total += @last_transaction
+  self.total += @last_transaction
   quantity.times { @items << title }
 end
 
