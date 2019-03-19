@@ -2,7 +2,7 @@
 
 class CashRegister
 
-attr_accessor :discount
+attr_accessor :discount :total
 
 @@total = 0
 @@all_items = []
